@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golf Pick 3 Competition</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #ecfdf3; color: #111827; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    .card { background: white; border-radius: 24px; padding: 24px; margin-bottom: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+    h1 { color: #14532d; margin-bottom: 8px; font-size: 36px; }
+    h2 { margin-top: 0; }
+    .subtitle { color: #15803d; font-size: 18px; }
+    .status { display: inline-block; background: #dcfce7; color: #14532d; padding: 10px 16px; border-radius: 999px; font-weight: bold; margin-top: 12px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 14px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+    th { color: #4b5563; font-size: 14px; }
+    .rank { font-weight: bold; font-size: 20px; color: #166534; }
+    .pick { display: inline-block; background: #dcfce7; color: #14532d; padding: 6px 10px; border-radius: 999px; margin: 3px; font-size: 13px; font-weight: bold; }
+    .live { color: #15803d; font-weight: bold; }
+    .out { color: #dc2626; font-weight: bold; }
+    .arrow-up { color: #16a34a; font-weight: bold; font-size: 20px; }
+    .arrow-down { color: #dc2626; font-weight: bold; font-size: 20px; }
+    li { margin-bottom: 10px; }
+    @media (max-width: 700px) {
+      h1 { font-size: 28px; }
+      table { font-size: 14px; }
+      th, td { padding: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Golf Pick 3 Competition</h1>
+      <div class="subtitle">Live leaderboard for the men's 4 golf majors</div>
+      <div class="status">Must Pick Winner Rule Active</div>
+    </div>
+
+    <div class="card">
+      <h2>Competition Leaderboard</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Move</th>
+            <th>Player</th>
+            <th>Picks</th>
+            <th>Status</th>
+            <th>Tie-break</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="rank">#1</td>
+            <td class="arrow-up">▲</td>
+            <td><strong>R Fowler</strong></td>
+            <td>
+              <span class="pick">Rory McIlroy</span>
+              <span class="pick">Cameron Young</span>
+              <span class="pick">Xander Schauffele</span>
+            </td>
+            <td class="live">LIVE</td>
+            <td>Winner + Young + Schauffele</td>
+          </tr>
+          <tr>
+            <td class="rank">#2</td>
+            <td class="arrow-down">▼</td>
+            <td><strong>Jonesy</strong></td>
+            <td>
+              <span class="pick">Rory McIlroy</span>
+              <span class="pick">Cameron Young</span>
+              <span class="pick">Justin Thomas</span>
+            </td>
+            <td class="live">LIVE</td>
+            <td>Winner + Young + Thomas</td>
+          </tr>
+          <tr>
+            <td class="rank">#3</td>
+            <td>▬</td>
+            <td><strong>Roche SES</strong></td>
+            <td>
+              <span class="pick">Rory McIlroy</span>
+              <span class="pick">Scottie Scheffler</span>
+              <span class="pick">Bryson DeChambeau</span>
+            </td>
+            <td class="out">OUT</td>
+            <td>3rd pick missed cut</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Competition Rules</h2>
+      <ul>
+        <li>Each person picks 3 golfers.</li>
+        <li>You must have the tournament winner in your picks to win the pool.</li>
+        <li>If multiple players have the winner, the next best golfer breaks the tie.</li>
+        <li>If still tied, the 3rd golfer decides.</li>
+        <li>If nobody picks the winner, the prize jackpots to the next major.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
